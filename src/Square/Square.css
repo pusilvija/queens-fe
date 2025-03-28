@@ -1,0 +1,11 @@
+.square {
+    width: 30px; /* Set the width */
+    height: 30px; /* Set the height equal to the width */
+    margin: 2px; /* Optional spacing between squares */
+    padding: 0; /* Ensure no padding affects the size */
+}
+
+.queen-image {
+    width: 100%; /* Make the image fill the square */
+    height: 100%; /* Ensure the image fills the square */
+}
