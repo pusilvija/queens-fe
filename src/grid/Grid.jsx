@@ -16,7 +16,7 @@ function Grid() {
             <Square x={2} y={1} colour="yellow" />
             <Square x={3} y={1} colour="green" />
 
-            <Square x={0} y={2} colour="blue" />
+            <Square x={0} y={2} colour="yellow" />
             <Square x={1} y={2} colour="yellow" />
             <Square x={2} y={2} colour="yellow" />
             <Square x={3} y={2} colour="blue" />
