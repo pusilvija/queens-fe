@@ -3,8 +3,7 @@ import './Square.css';
 
 function Square({ x, y, colour }) {
     const [showImage, setShowImage] = useState(false);
-    const [info, setInfo] = useState(null); // State to store the response from the API
-
+    
     const sendCoordinates = (endpoint) => {
         fetch(`http://localhost:5174/${endpoint}`, {
             method: 'POST',
@@ -16,7 +15,6 @@ function Square({ x, y, colour }) {
             .then((response) => response.json())
             .then((data) => {
                 console.log(`API Response (${endpoint}):`, data.message); // Log the response from the API
-                setInfo(data); // Store the response in state
             })
             .catch((error) => {
                 console.error(`Error sending coordinates to /${endpoint}:`, error);
