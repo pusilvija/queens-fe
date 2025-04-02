@@ -14,7 +14,11 @@ function Square({ x, y, colour }) {
         })
             .then((response) => response.json())
             .then((data) => {
-                console.log(`API Response (${endpoint}):`, data.message); // Log the response from the API
+                if (data.message.trim() === 'Victory') {
+                    alert('You have won!'); // Show an alert if the response is "Victory"`);
+                    console.log('You have won!'); // Log the victory message
+                }
+                console.log(`API Response (${endpoint}): -${data.message}-`); // Log the response from the API
             })
             .catch((error) => {
                 console.error(`Error sending coordinates to /${endpoint}:`, error);
