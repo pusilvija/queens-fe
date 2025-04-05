@@ -2,19 +2,6 @@ import { useState } from 'react';
 import Square from '../Square/Square'; // Import the Square component
 import './Queens.css';
 
-// function Queens() {
-
-    
-
-    
-
-//     return (
-//         <>
-//         <input type="text" placeholder="Enter number of queens" />
-//         <button>Generate grid</button>
-//         </>
-//     )
-// }
 
 function Queens() {
     const [numQueens, setNumQueens] = useState('5'); // State for the input value
@@ -47,6 +34,9 @@ function Queens() {
                 type="text"
                 placeholder="Enter number of queens"
                 value={numQueens}
+                min={4}
+                max={10}
+                pattern="[0-9]*" // Only allow numbers
                 onChange={handleInputChange} // Update state on input change
             />
             <button onClick={handleGenerateGrid}>Generate grid</button>
