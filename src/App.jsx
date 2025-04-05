@@ -1,10 +1,10 @@
 import './App.css'
-import Grid from './grid/Grid'
+import Queens from './Queens/Queens'
 
 function App() {
   return (
     <>
-      <Grid></Grid>
+      <Queens></Queens>
     </>
   )
 }

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Square.css';
 
-function Square({ x, y, colour }) {
+function Square({ x, y, square_color }) {
     const [showImage, setShowImage] = useState(false);
     
     const sendCoordinates = (endpoint) => {
@@ -38,7 +38,8 @@ function Square({ x, y, colour }) {
         <button
             x={x}
             y={y}
-            style={{ backgroundColor: colour }}
+            square_color={square_color}
+            style={{ backgroundColor: square_color }}
             className="square"
             onClick={handleClick}
         >
